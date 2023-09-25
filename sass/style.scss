@@ -1,0 +1,30 @@
+/*!
+Theme Name: thelawfirm20
+Theme URI: http://thelawfirm20.kssdev.com
+Author: The Law Firm, Your Welcome.
+Author URI: http://thelawfirm20.kssdev.com
+Description: The Law Firm\'s Wordpress boilerplate. Your welcome.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: thelawfirm20
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+
+thelawfirm20 is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+*/
+
+
+@import "variables/variables-site";
+@import "mixins/mixins-master";
+@import "normalize";
+@import "grid";
+@import "components/module";
+@import "header";
+@import "footer";
+@import "site";
+@import "pages/module";
+@import "responsive/module";

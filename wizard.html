@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<head>
+<title>Wellements - Bundle wizard  </title>
+<meta>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+<!-- SLICK CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+</head>
+
+<body>
+  <div id="page" class="site">
+    <header id="masthead" class="site-header" role="banner">
+      <nav id="nav" role="navigation">
+        <div class="brand-logo left-nav">
+          <img src="assets/svg/header_logo.svg" alt="wellements logo" />
+        </div>
+        <div class="main-nav">
+          <ul title="main navigation" role="group" aria-labelledby="main navigation">
+            <li tabindex="10"><a title="shop" href="#">Shop</a></li>
+            <li tabindex="20"><a title="bundle" href="#">Bundle &amp; Save</a></li>
+            <li tabindex="30"><a title="store locator" href="#">Store Locator</a></li>
+            <li tabindex="50"><a title="education center" href="#">Education Center</a></li>
+            <li tabindex="40"><a title="about us" href="#">About Us</a></li>
+            <li class="desktop-only" tabindex="60"><a title="login" href="#">Login</a></li>
+            <li class="mobile-only" tabindex="70">
+              <hr />
+              <p>Already a customer?</p>
+              <a class="link-login" title="log in" href="#" tabIndex="75">Log in to your account.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-nav">
+          <a href="#" title="search">
+            <img src="assets/svg/search_icon.svg" alt="search icon" />
+          </a>
+          <a href="#" title="cart">
+            <img src="assets/svg/cart_icon.svg" alt="cart icon" />
+          </a>
+          <div class="mobile-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header><!-- #masthead -->
+
+    <div id="content" class="site-content">
+
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+          
+          <section class="common-top-section" style="background-image: none;">
+            <div class="row">
+              <div class="col col-4 col-tablet-land-12 top-content">
+                <h2>Build a Baby Wellness Bundle</h2>
+                <hr />
+                <p>Add 3 or more products to start saving on Wellness Essentials for your child.</p>
+              </div>
+
+              <div class="col col-8 col-tablet-land-12  top-image">
+                <img src="assets/img/all_3_fix1.png" alt="hero image">
+              </div>
+            </div>
+          </section>
+
+          <section class="free-shipping">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="save-options">
+                  <span class="option-item"><i class="fas fa-shopping-cart"></i>Save 10%</span>
+                  <span class="option-item"><i class="fas fa-truck"></i>Free shipping</span>
+                  <span class="option-item"><i class="fas fa-shopping-cart"></i>Save 15%</span>
+                  <span class="option-item"><i class="fas fa-shopping-cart"></i>Save 25%</span>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <p><strong>Add 3 more product to save 10% and unlock free shipping!</strong></p>
+              </div>
+            </div>
+          </section>
+
+          <section class="bundle-section">
+
+            <div class="row">
+              <div class="col-9 col-tablet-land-12">
+                <h2>Start your Bundle</h2>
+
+                <a href="javascript:;" class="common-toggle" aria-expanded="false" role="button" data-toggle="collapse" data-target="#bundle_options">Premade Bundles <span class="caret"></span></a>
+                
+                <div id="bundle_options" class="bundle-options">
+                  <button class="tag-button tag-btn-lg">Create your own Bundle</button>
+                  <button class="tag-button">Newborn Bundle</button>
+                  <button class="tag-button">Bundle Name 3</button>
+                  <button class="tag-button">Bundle Name 4</button>
+                </div>
+
+                <div class="filter">
+                  <div class="filter-categories">
+                    <div class="filter-toggle">
+                      <span>Filters Results</span>
+                      <span class="filter-icon" role="button" aria-label="filter button">
+                        <span></span>
+                        <span></span>
+                      </span>
+                    </div>
+                    <div class="filters-strip">
+                      <input id="ftr_1" role="checkbox" aria-checked="false" data-category="0-3 months" name="0-3 months" type="checkbox" class="checkbox">
+                      <label for="ftr_1">Newborns (0-3 Months)</label>
+
+                      <input id="ftr_2" role="checkbox" aria-checked="false" data-category="3 months+" name="3 months+" type="checkbox" class="checkbox">
+                      <label for="ftr_2">Infants & Kids (3 Months & Up)</label>
+
+                      <input id="ftr_3" role="checkbox" aria-checked="false" data-category="remedies" name="remedies" type="checkbox" class="checkbox">
+                      <label for="ftr_3">Remedies</label>
+
+                      <input id="ftr_4" role="checkbox" aria-checked="false" data-category="vitamins & minerals" name="vitamins & minerals" type="checkbox" class="checkbox">
+                      <label for="ftr_4">Vitamins & Minerals</label>
+                    </div>
+                  </div>
+
+                  <hr class="gray">
+
+                  <div class="filter-display">
+                    <p class="results">Showing 3 Products</p>
+                    <ul class="product-list">
+                      <li class="product prodfix" data-categories='["remedies", "0-3 months"]'>
+                        <div class="product-header">
+                          <img src="assets/img/baby_tooth_oil.png" alt="product-image" />
+                          <p class="title">Organic Gripe Water</p>
+                        </div>
+                        <div class="show-mobile">
+                          <div class="rating-stars">
+                            <span style="width: 100%"></span>
+                          </div>
+                        </div>
+                        <p class="price">$9.99</p>
+                        <div class="logos show-mobile">
+                          <img src="assets/svg/organic.svg" alt="organic logo">
+                          <img src="assets/svg/glutenfree.svg" alt="gluten free logo">
+                          <img src="assets/svg/Vegan.svg" alt="vegan logo">
+                          <img src="assets/svg/Vegan.svg" alt="vegan logo">
+                          <img src="assets/svg/Vegan.svg" alt="vegan logo">
+                        </div>
+                        <div class="quantity">
+                          <span>Quantity</span>
+                          <span class="minus">-</span>
+                          <input class="quant-display" type="number" value="1">
+                          <span class="plus">+</span>
+                        </div>
+                        <div class="prod-btm">
+                          <a href="" class="c-button primary">Add to Bundle</a>
+                        </div>
+                        <div class="prod-links hidden-mobile">
+                          <a href="javascript:;">More Details</a>
+                        </div>
+
+                        <div class="prod-tag">
+                          2 in Bundle
+                        </div>
+                      </li>
+
+                      <li class="product prodfix" data-categories='["remedies", "3 months+"]'>
+                        <div class="product-header">
+                          <img src="assets/img/baby_tooth_oil.png" alt="product-image" />
+                          <p class="title">Organic Gripe Water</p>
+                        </div>
+                        <div class="show-mobile">
+                          <div class="rating-stars">
+                            <span style="width: 100%"></span>
+                          </div>
+                        </div>
+                        <p class="price">$9.99</p>
+                        <div class="logos show-mobile">
+                          <img src="assets/svg/organic.svg" alt="organic logo">
+                          <img src="assets/svg/glutenfree.svg" alt="gluten free logo">
+                          <img src="assets/svg/Vegan.svg" alt="vegan logo">
+                          <img src="assets/svg/Vegan.svg" alt="vegan logo">
+                          <img src="assets/svg/Vegan.svg" alt="vegan logo">
+                        </div>
+                        <div class="quantity">
+                          <span>Quantity</span>
+                          <span class="minus">-</span>
+                          <input class="quant-display" type="number" value="1">
+                          <span class="plus">+</span>
+                        </div>
+                        <div class="prod-btm">
+                          <a href="" class="c-button primary">Add to Bundle</a>
+                        </div>
+                        <div class="prod-links hidden-mobile">
+                          <a href="javascript:;">More Details</a>
+                        </div>
+                      </li>
+
+                      <li class="product prodfix" data-categories='["vitamins & minerals", "0-3 months"]'>
+                        <div class="product-header">
+                          <img src="assets/img/baby_tooth_oil.png" alt="product-image" />
+                          <p class="title">Organic Gripe Water</p>
+                        </div>
+                        <div class="show-mobile">
+                          <div class="rating-stars">
+                            <span style="width: 100%"></span>
+                          </div>
+                        </div>
+                        <p class="price">$9.99</p>
+                        <div class="logos show-mobile">
+                          <img src="assets/svg/organic.svg" alt="organic logo">
+                          <img src="assets/svg/glutenfree.svg" alt="gluten free logo">
+                          <img src="assets/svg/Vegan.svg" alt="vegan logo">
+                          <img src="assets/svg/Vegan.svg" alt="vegan logo">
+                          <img src="assets/svg/Vegan.svg" alt="vegan logo">
+                        </div>
+                        <div class="quantity">
+                          <span>Quantity</span>
+                          <span class="minus">-</span>
+                          <input class="quant-display" type="number" value="1">
+                          <span class="plus">+</span>
+                        </div>
+                        <div class="prod-btm">
+                          <a href="" class="c-button primary">Add to Bundle</a>
+                        </div>
+                        <div class="prod-links hidden-mobile">
+                          <a href="javascript:;">More Details</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /. filter-display -->
+                </div>
+                <!-- /. filter -->
+
+              </div>
+
+              <div class="col-3 col-tablet-land-12">
+                <div class="sidebox">
+                  <h2>My Bundle</h2>
+                  <hr>
+                  <p><strong>Add a product to start your baby wellness bundle!</strong></p>
+                  <div class="cart-single">
+                    <div class="cart-btm">
+                      <a href="" class="c-button primary btn-w-lg">Checkout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </section>
+          <!-- /. bundle section -->
+
+          <section id="newsletter-block" class="row newsletter-block-2" style="background-image: url(assets/img/mountains-bg@2x.jpg);">
+            <div class="col-12 newsletter">
+              <div class="align-t-10 text-center">
+                <h2>Join Our Newsletter</h2>
+                <hr/>
+                <p>Get deals, articles and company news<br/>right to your inbox!</p>
+                <form action="#" class="newsletter-signup-form" title="Newsletter Signup">
+                  <input type="text" placeholder="Enter your email address" />
+                  <div class="button green submit" aria-label="join" role="button">
+                    <p>Join</p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </main><!-- #main -->
+      </div><!-- #primary -->
+
+      </div><!-- #content -->
+
+    <footer class="site-footer" role="contentinfo" data-root="<?php echo get_template_directory_uri(); ?>">
+      <div class="row padding-t-b">
+        <div id="footer-logo" class="col-3 col-tablet-12">
+          <img src="assets/svg/footer_logo.svg" alt="wellements logo" />
+        </div>
+        <div class="col-2 col-tablet-6 col-offset-1 links">
+          <ul>
+            <li><a title="shop" href="#"><p>Shop</p></a></li>
+            <li><a title="bundle and save" href="#"><p>Bundle & Save</p></a></li>
+            <li><a title="store locator" href="#"><p>Store Locator</p></a></li>
+          </ul>
+        </div>
+        <div class="col-2 col-tablet-6 links">
+          <ul>
+            <li><a title="about us" href="#"><p>About Us</p></a></li>
+            <li><a title="education center" href="#"><p>Education Center</p></a></li>
+            <li><a title="login" href="#"><p>Login</p></a></li>
+          </ul>
+        </div>
+        <div class="col-3 col-tablet-12 col-offset-1">
+            <ul class="social-icons flex-between">
+              <li><a title="Wellements Facebook" aria-label="Link to Wellements Facebook" href="#" target="_blank">
+                <img src="assets/svg/social/light/facebook_icon.svg" alt="Facebook Social" />
+              </a></li>
+              <li><a title="Wellements Instagram" aria-label="Link to Wellements Instagram" href="#" target="_blank">
+                <img src="assets/svg/social/light/instagram_icon.svg" alt="Instagram Social" />
+              </a></li>
+              <li><a title="Wellements Youtube" aria-label="Link to Wellements Youtube" href="#" target="_blank">
+                <img src="assets/svg/social/light/youtube_icon.svg" alt="Youtube Social" />
+              </a></li>
+              <li><a title="Wellements Twitter" aria-label="Link to Wellements Twitter" href="#" target="_blank">
+                <img src="assets/svg/social/light/twitter_icon.svg" alt="Twitter Social" />
+              </a></li>
+              <li><a title="Wellements Google Plus" aria-label="Link to Wellements Google Plus" href="#" target="_blank">
+                <img src="assets/svg/social/light/googleplus_icon.svg" alt="Google Plus Social" />
+              </a></li>
+              <li><a title="Wellements RSS Feed" aria-label="Link to Wellements RSS Feed" href="#" target="_blank">
+                <img src="assets/svg/social/light/rss_icon.svg" alt="RSS Feed" />
+              </a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="site-info row">
+        <div class="col-8 col-tablet-12">
+          <ul>
+            <li><a title="privacy policy" href="#"><p>Privacy Policy</p></a></li>
+            <li><a title="return policy" href="#"><p>Return Policy</p></a></li>
+            <li><a title="sipping policy" href="#"><p>Shipping Policy</p></a></li>
+            <li id="copyright"><p>&copy; 2018 Wellements</p></li>
+          </ul>
+        </div>
+        <div class="col-3 col-offset-1">
+        </div>
+      </div><!-- .site-info -->
+    </footer><!-- #colophon -->
+  </div><!-- #page -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

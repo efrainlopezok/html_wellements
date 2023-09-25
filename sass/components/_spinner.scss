@@ -1,0 +1,103 @@
+
+
+.input-group-spinner {
+  display: inline-flex;
+
+  *:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .minus,
+  .plus {
+    background-color: #BBBDBF;
+    background-repeat: no-repeat;
+    background-size: 13px auto;
+    background-position: center;
+    border: 0 none;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    outline: 0;
+    top: 4px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .minus {
+    background-image: url(assets/img/minus@2x.png);
+  }
+  .plus {
+    background-image: url(assets/img/plus@2x.png);
+  }
+
+  input {
+    background: #fff;
+    border: 1px solid #201D1E;
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+
+    &.empty {
+      border: 0 none;
+      font-weight: bold;
+      height: auto;
+      padding: 0;
+      width: 15px;
+    }
+  }
+}
+
+// Variation for quantity
+
+.input-group-spinner.input-quantity {
+  align-items: center;
+
+  input {
+    color: #000;
+    width: 38px;
+    height: 44px;
+    text-align: center;
+    padding: 5px;
+    margin-right: 10px;
+    -webkit-display: none;
+    border: solid 1px #201D1E;
+    border-radius: 3px;
+
+    &.empty {
+      border: 0 none;
+      font-weight: bold;
+      height: auto;
+      padding: 0;
+      width: 15px;
+      margin: 0;
+    }
+  }
+
+  button {
+    background-color: #fff;
+    border: 1px solid #a2a2a2;
+    border-radius: 0;
+    width: 20px;
+    height: 20px;
+
+    &:disabled {
+      opacity: 0.5;
+    }
+
+    &.minus {
+      background-image: url(assets/img/minus-gray@2x.png);
+    }
+    &.plus {
+      background-image: url(assets/img/plus-gray@2x.png);
+    }
+  }
+
+  *:not(:last-child) {
+    margin-right: 6px;
+  }
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<head>
+<title>Wellements - Cart bundles </title>
+<meta>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+<!-- SLICK CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+  <div id="page" class="site">
+    <header id="masthead" class="site-header" role="banner">
+      <nav id="nav" role="navigation">
+        <div class="brand-logo left-nav">
+          <img src="assets/svg/header_logo.svg" alt="wellements logo" />
+        </div>
+        <div class="main-nav">
+          <ul title="main navigation" role="group" aria-labelledby="main navigation">
+            <li tabindex="10"><a title="shop" href="#">SHOP</a></li>
+            <li tabindex="20"><a title="bundle" href="#">BUNDLE &amp; SAVE</a></li>
+            <li tabindex="30"><a title="store locator" href="#">STORE LOCATOR</a></li>
+            <li tabindex="50"><a title="education center" href="#">EDUCATION CENTER</a></li>
+            <li tabindex="40"><a title="about us" href="#">ABOUT US</a></li>
+            <li class="desktop-only" tabindex="60"><a title="login" href="#">LOGIN</a></li>
+            <li class="mobile-only" tabindex="70">
+              <hr />
+              <p>Already a customer?</p>
+              <a class="link-login" title="log in" href="#" tabIndex="75">Log in to your account.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-nav">
+          <a href="#" title="search">
+            <img src="assets/svg/search_icon.svg" alt="search icon" />
+          </a>
+          <a href="#" title="cart">
+            <img src="assets/svg/cart_icon.svg" alt="cart icon" />
+          </a>
+          <div class="mobile-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header><!-- #masthead -->
+
+    <div id="content" class="site-content">
+
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+
+          <div class="pages-main cart-page cart-bundles-page">
+
+            <div class="row row-md">
+              <div class="col col-12">
+                <div class="page-heading">
+                  <h2>Cart <small>2 Items (1 Bundle)</small></h2>
+                </div>
+              </div>
+
+              <div class="col-8 col-tablet-land-12">
+
+                <h2 class="hidden-desktop-md">Bundles</h2>
+                <hr class="dark-gray thin wide mt-0 hidden-desktop-md">
+
+                <div class="heading-sm">
+                  <h4 class="hidden-tablet">Custom Baby Wellness Bundle</h4>
+                  <h4 class="show-tablet">Baby Wellness Kit</h4>
+                  <div class="heading-links">
+                    <a href="#">Add items</a>
+                    <span class="abs-mobile">
+                      <a href="#" data-remove="">
+                        <span class="hidden-desktop-md">Remove Bundle</span>
+                        <span class="show-desktop-md">REMOVE KIT</span>
+                      </a>
+                    </span>
+                  </div>
+
+                  <div class="heading-toolbar">
+                    <input type="checkbox" id="chk_01" class="checkbox" onchange="toggleDisplayChecked(this)" data-target="[data-toggle='bundle']">
+                    <label for="chk_01">
+                      <span class="hidden-desktop-md">Subscribe and save 5%</span>
+                      <span class="show-desktop-md-i">Subscribe to this kit</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="row-fluid gutter-10">
+                  <div class="col-6 col-tablet-land-12">
+                    <div class="cart-product-subscribe">
+                      <p class="hidden-desktop-md">How often would you like this shipped?</p>
+                      <select name="" id="subscribe_select">
+                        <option value="Ship every month">Ship every month</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="hidden-desktop-md"><strong>3 Products In Your Bundle</strong></p>
+
+                <div class="row-fluid gutter-10 bundles-grid">
+                  <div class="col-6 col-tablet-land-12">
+                    <div class="bundle-product">
+                        <button class="remove"></button>
+                        <div class="cart-product-info cart-pi-sm">
+                          <picture>
+                            <img src="assets/img/product-thumbnail.png" alt="baby tooth oil">
+                          </picture>
+                          <div class="info-body">
+                            <p><strong>1</strong> Organic Gripe Water</p>
+                            
+                            <div class="input-group-spinner input-quantity">
+                              <span><strong>Quantity: <input type="text" min="1" max="100" value="1" class="empty"> </strong></span>
+                              <button class="minus" disabled=""></button>
+                              <button class="plus"></button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-tablet-land-12">
+                    <div class="bundle-product">
+                        <button class="remove"></button>
+                        <div class="cart-product-info cart-pi-sm">
+                          <picture>
+                            <img src="assets/img/product-thumbnail.png" alt="baby tooth oil">
+                          </picture>
+                          <div class="info-body">
+                            <p><strong>1</strong> Organic Gripe Water</p>
+                            
+                            <div class="input-group-spinner input-quantity">
+                              <span><strong>Quantity: <input type="text" min="1" max="100" value="1" class="empty"> </strong></span>
+                              <button class="minus" disabled=""></button>
+                              <button class="plus"></button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-tablet-land-12">
+                    <div class="bundle-product">
+                        <button class="remove"></button>
+                        <div class="cart-product-info cart-pi-sm">
+                          <picture>
+                            <img src="assets/img/product-thumbnail.png" alt="baby tooth oil">
+                          </picture>
+                          <div class="info-body">
+                            <p><strong>1</strong> Organic Gripe Water</p>
+                            
+                            <div class="input-group-spinner input-quantity">
+                              <span><strong>Quantity: <input type="text" min="1" max="100" value="1" class="empty"> </strong></span>
+                              <button class="minus" disabled=""></button>
+                              <button class="plus"></button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 show-desktop-md">
+                    <div class="alert-msg alert-success text-center">
+                      Add 2 more products to your Kit for Free Shipping!
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-tablet-land-12">
+                    <button class="add-bundle-product">
+                      <span>Add another item to this Bundle!</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- /. bundles grid -->
+
+                <hr class="dark-gray thin wide">
+
+                <p class="text-right hidden-desktop-md"><strong>Bundle Subtotal (1 Bundle): $18.99</strong></p>
+
+                <div class="non-bundled-items hidden-desktop-md">
+                  <h2>Non-Bundled Items</h2>
+
+                  <table class="cart-table-product" width="100%">
+                    <thead>
+                      <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td >
+                          <div class="cart-product-info">
+                            <picture>
+                              <img src="assets/img/product-thumbnail.png" alt="baby tooth oil">
+                            </picture>
+                            <div class="info-body">
+                              <p> Organic Gripe Water</p>
+                              <a href="">Remove</a>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td class="unborder">
+                          <div class="mb-1">
+                            <span class="price">
+                              <strong>$18.99</strong>
+                              <span class="price-red hidden" data-toggle="subscribe">$18.99</span>
+                            </span>
+                          </div>
+                          <input type="checkbox" id="chk_02" class="checkbox" onchange="toggleDisplayChecked(this)" data-target="[data-toggle='subscribe']">
+                          <label for="chk_02">Subscribe and save 5%</label>
+                        </td>
+
+                        <td width="10%" class="unborder">
+                          <div class="input-group-spinner input-quantity">
+                            <input type="text" min="1" max="100" value="1">
+                            <button class="minus" disabled></button>
+                            <button class="plus"></button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" align="right" class="unborder subtotal">
+                          <strong>Non-Bundled Item Subtotal (1 Item): $18.99</strong>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+              </div>
+
+              <div class="col-4 col-tablet-land-12">
+                <div class="sidebox-round mb-3">
+                  <table class="cart-table">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="hidden-desktop-md">Subtotal (2 items)</span>
+                          <span class="show-desktop-md-i">Kit Subtotal</span>
+                        </td>
+                        <td align="right">$18.99</td>
+                      </tr>
+                      <tr>
+                        <td ><span class="show-desktop-md-i">Kit&nbsp;</span>Shipping
+                        </td>
+                        <td align="right" style="line-height:18px">
+                          <small class="hidden-desktop-md">Your Bundle earns you <br> free shipping!</small>
+                          <span class="show-desktop-md-i">$3.99</span>
+                        </td>
+                      </tr>
+                      <tr class="hidden" data-toggle="bundle">
+                        <td>
+                          <span class="alert-text">Bundle Discount - 10% Off</span>
+                        </td>
+                        <td align="right">
+                          <span class="alert-text">-$0.96</span>
+                        </td>
+                      </tr>
+                      <tr class="hidden" data-toggle="subscribe">
+                        <td>
+                          <span class="alert-text">Subscribe Discount - 5% Off</span>
+                        </td>
+                        <td align="right">
+                          <span class="alert-text">-$0.96</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <a href="">Have a Promo Code?</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <hr class="dark-gray thin">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="line-height:18px">
+                          <strong class="hidden-desktop-md">Estimated Total:</strong>
+                          <span class="show-desktop-md-i">Estimated Kit Total:</span>
+                          <br>
+                          <small>Taxes not included.</small>
+                        </td>
+                        <td align="right" style="line-height:18px">
+                          <strong class="hidden-desktop-md">$41.01</strong> 
+                          <span class="show-desktop-md-i">$22.98</span>
+                          <br>
+                          <small class="hidden" data-toggle="subscribe">
+                            <span class="hidden-desktop-md">$18.03&nbsp;</span>recurs <br> every month
+                          </small>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <button class="c-button primary btn-wide">Proceed to Checkout</button>
+                  <div class="show-desktop-md mt-2">
+                    <button class="c-button btn-wide">Continue Shopping</button>
+                  </div>
+                </div>
+
+                <div class="mb-3 text-center hidden-desktop-md">
+                  <a href="">Want to keep shopping?</a>
+                </div>
+                
+              </div>
+            </div>
+
+          </div>
+          <!-- /. pages main-->
+
+        </main><!-- #main -->
+      </div><!-- #primary -->
+
+      </div><!-- #content -->
+
+    <footer class="site-footer" role="contentinfo" data-root="<?php echo get_template_directory_uri(); ?>">
+      <div class="row padding-t-b">
+        <div id="footer-logo" class="col-3 col-tablet-12">
+          <img src="assets/svg/footer_logo.svg" alt="wellements logo" />
+        </div>
+        <div class="col-2 col-tablet-6 col-offset-1 links">
+          <ul>
+            <li><a title="shop" href="#"><p>Shop</p></a></li>
+            <li><a title="bundle and save" href="#"><p>Bundle & Save</p></a></li>
+            <li><a title="store locator" href="#"><p>Store Locator</p></a></li>
+          </ul>
+        </div>
+        <div class="col-2 col-tablet-6 links">
+          <ul>
+            <li><a title="about us" href="#"><p>About Us</p></a></li>
+            <li><a title="education center" href="#"><p>Education Center</p></a></li>
+            <li><a title="login" href="#"><p>Login</p></a></li>
+          </ul>
+        </div>
+        <div class="col-3 col-tablet-12 col-offset-1">
+            <ul class="social-icons flex-between">
+              <li><a title="Wellements Facebook" aria-label="Link to Wellements Facebook" href="#" target="_blank">
+                <img src="assets/svg/social/light/facebook_icon.svg" alt="Facebook Social" />
+              </a></li>
+              <li><a title="Wellements Instagram" aria-label="Link to Wellements Instagram" href="#" target="_blank">
+                <img src="assets/svg/social/light/instagram_icon.svg" alt="Instagram Social" />
+              </a></li>
+              <li><a title="Wellements Youtube" aria-label="Link to Wellements Youtube" href="#" target="_blank">
+                <img src="assets/svg/social/light/youtube_icon.svg" alt="Youtube Social" />
+              </a></li>
+              <li><a title="Wellements Twitter" aria-label="Link to Wellements Twitter" href="#" target="_blank">
+                <img src="assets/svg/social/light/twitter_icon.svg" alt="Twitter Social" />
+              </a></li>
+              <li><a title="Wellements Google Plus" aria-label="Link to Wellements Google Plus" href="#" target="_blank">
+                <img src="assets/svg/social/light/googleplus_icon.svg" alt="Google Plus Social" />
+              </a></li>
+              <li><a title="Wellements RSS Feed" aria-label="Link to Wellements RSS Feed" href="#" target="_blank">
+                <img src="assets/svg/social/light/rss_icon.svg" alt="RSS Feed" />
+              </a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="site-info row">
+        <div class="col-8 col-tablet-12">
+          <ul>
+            <li><a title="privacy policy" href="#"><p>Privacy Policy</p></a></li>
+            <li><a title="return policy" href="#"><p>Return Policy</p></a></li>
+            <li><a title="sipping policy" href="#"><p>Shipping Policy</p></a></li>
+            <li id="copyright"><p>&copy; 2018 Wellements</p></li>
+          </ul>
+        </div>
+        <div class="col-3 col-offset-1">
+        </div>
+      </div><!-- .site-info -->
+    </footer><!-- #colophon -->
+  </div><!-- #page -->
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

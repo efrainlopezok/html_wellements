@@ -1,0 +1,146 @@
+
+// chekcbox & radio
+
+input[type="radio"].radio {
+  display: none;
+
+  & + label {
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 22px;
+
+    &:before {
+      background-color: #fff;
+      border: 1px solid #BBBDBF;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 15px;
+      width: 15px;
+      position: absolute;
+      top: 3px;  left: 0;
+    }
+  }
+
+  &:checked + label {
+    &:before {
+      background-color: #3CAE49;
+      border-color: transparent;
+    }
+  }
+}
+
+input.checkbox {
+  pointer-events: none;
+  opacity: 0;
+  position: absolute !important;
+  bottom: initial !important;
+
+  & + label {
+    color: #222;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+
+    &:before {
+      content: '';
+      cursor: pointer;
+      display: inline-block;
+      -webkit-appearance:none;
+      background:white;
+      border:solid 1px $color_black;
+      border-radius:0;
+      bottom:-3px;
+      position:relative;
+      margin-right:8px;
+      width: 16px;
+      height: 16px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &:checked + label {
+    &:after {
+      content:"\2714";
+      font-size: 15px;
+      position:absolute;
+      left:4px;
+      top:-2px;
+      color:$color_black;
+    }
+  }
+
+}
+
+/* Custom form  */
+
+.custom-form {
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group-submit *:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .form-input {
+    background-color: #fff;
+    border: 1px solid #DCDFE1;
+    border-radius: 4px;
+    display: block;
+    height: 44px;
+    width: 100%;
+    padding: 2px 18px;
+    outline: 0;
+    margin-bottom: 10px;
+
+    @include breakpoint($size_tablet) {
+      border: 1px solid #979797;
+    }
+  }
+
+  select.form-input {
+    background: url(assets/img/dpdn-arrow.png) scroll 100% 50% no-repeat;
+    background-size: 12px auto;
+    background-position: calc(100% - 10px) center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 26px;
+  }
+
+  textarea.form-input {
+    height: auto;
+    padding-top: 9px;
+    padding-bottom: 3px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .help-text {
+    display: block;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: -5px;
+  }
+
+  &.gray-form {
+    background-color: #f5f5f7;
+    border: 0 none;
+    padding: 20px 25px 22px 22px;
+  }
+
+  .form-description {
+
+  }
+
+}

@@ -1,0 +1,29 @@
+
+
+.rating-stars {
+  background: url(assets/img/star2-o@2x.png) scroll 0 0 repeat-x;
+  background-size: auto 17px;
+  display: inline-block;
+  width: 106px;
+  height: 17px;
+  position: relative;
+
+  >span {
+    background: url(assets/img/star2@2x.png) scroll 0 0 repeat-x;
+    background-size: auto 17px;
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    bottom: 0;
+  }
+
+  &.stars-lg {
+    width: 177px;
+    background-size: auto 28px;
+    height: 28px;
+
+    >span {
+      background-size: auto 28px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "vr",
+  "version": "1.0.0",
+  "description": "KSS",
+  "main": "main.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Jeff Williams",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "latest",
+    "gulp-uglify": "^2.0.0"
+  }
+}

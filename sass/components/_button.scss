@@ -1,0 +1,85 @@
+
+.c-button {
+  background-color: #fff;
+  border: 2px solid #201D1E;
+  border-radius:24px;
+  display: inline-block;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  line-height: 17px;
+  height: 44px;
+  outline: 0;
+  padding: 8px 25px;
+  text-align: center;
+
+  &.primary {
+    background-color: #3CAE49;
+    border-color: #3CAE49;
+    color: #fff;
+  }
+
+  &.btn-leaf {
+    background-color: #3CAE49;
+    border-color: #3CAE49;
+    border-radius: 20px 0 20px 0;
+    color: #fff;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  // Buttons width
+
+  &.btn-w-sm {
+    width: 144px;
+    max-width: 100%;
+  }
+
+  &.btn-w-md {
+    width: 210px;
+    max-width: 100%;
+  }
+
+  &.btn-w-lg {
+    width: 250px;
+    max-width: 100%;
+  }
+
+  &.btn-wide {
+    width: 100%;
+  }
+
+}
+
+// Fix for links buttons
+
+a.c-button {
+  padding-top: 11px;
+}
+
+// buttons for tags
+
+.tag-button {
+  background-color: #fff;
+  border: 2px solid #222;
+  border-radius:28px;
+  display: inline-block;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  line-height: 17px;
+  height: 46px;
+  outline: 0;
+  padding: 8px 20px;
+  text-align: center;
+
+  &.tag-btn-lg {
+    width: 250px;
+    max-width: 100%;
+  }
+
+  &.tag-disable {
+    border-width: 1px;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,53 @@
+
+.common-toggle {
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+  border-bottom: solid 1px #201D1E;
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+
+  .caret {
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 12px;
+      top: 14px;
+      left: 8px;
+      transform: rotate(0);
+      transition: transform .25s ease-out;
+      border-bottom: solid 1px #201D1E;
+    }
+
+    &:before {
+      left: 16px;
+      transform: rotate(-45deg);
+    }
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+
+  &[aria-expanded="true"] {
+    .caret:before {
+      transform: rotate(45deg);
+    }
+    .caret:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  // Common toggle for collapse 
+  &.common-collapse {
+    position: relative;
+
+    .caret {
+      position: absolute;
+      right: 30px;
+    }
+  }
+}

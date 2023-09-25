@@ -1,0 +1,83 @@
+
+
+.categories-hero,
+.common-top-section {
+  background: url(assets/img/categories-hero@2x.jpg) scroll 100% center no-repeat;
+  background-size: 797px auto;
+  padding-top: 90px;
+  padding-bottom: 0;
+  min-height: 383px;
+
+  p {
+    max-width: 482px;
+  }
+}
+
+.common-top-section {
+  min-height: auto;
+  margin-bottom: 20px;
+
+  @include breakpoint($size_tablet-landscape - 1) {
+    .top-content,
+    .top-image {
+      padding: 0;
+      text-align: center;
+    }
+
+    .top-content {
+      order: 2;
+    }
+    .top-image {
+      order: 1;
+    }
+
+    hr,
+    p {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    p {
+      font-weight: 300;
+    }
+  }
+
+  @include breakpoint($size_tablet - 1) {
+    padding-top: 30px;
+    
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+.categories-shop {
+  .filter-toggle,
+  .filters-strip {
+    display: inline-block;
+  }
+
+  .filter-toggle {
+    margin-right: 40px;
+  }
+}
+
+.newsletter-block-2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  min-height: 300px;
+
+  .newsletter > div > p,
+  .newsletter-signup-form input {
+    font-weight: 300;
+  }
+
+  @include breakpoint(1500px) {
+    background-size: 130% auto;
+  }
+
+  @include breakpoint($size_desktop - 1) {
+    background-size: 220% auto;
+  }
+}

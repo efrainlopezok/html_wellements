@@ -1,0 +1,99 @@
+
+
+.landing-top-section {
+  padding: 180px 0;
+  background: url(assets/img/all_3_fix1_no-bg_R1.jpg) scroll 0 0 no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.section-bundle-work {
+  text-align: center;
+  color: #fff;
+  background: #514d4a;
+  padding: 50px 0 55px;
+}
+
+.section-start {
+  min-height: auto;
+  padding: 80px 0 35px;
+
+  &.section-reverse {
+    background: #fafafa;
+
+    .row {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.section-top-mobile {
+  min-height: 200px;
+  background: url(assets/img/all_3_fix1_no-bg_R@4x.png) scroll 0 0 no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@include breakpoint($size_desktop) {
+  .landing-top-section {
+    padding: 100px 0;
+  }
+}
+
+@include breakpoint($size_tablet-landscape) {
+  .landing-top-section, .section-start {
+    background: transparent;
+    padding: 20px 0;
+
+    .top-img {
+      order: 1;
+    }
+    .top-content {
+      order: 2;
+      text-align: center;
+
+      hr {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .section-bundle-work, .section-bundle {
+    padding: 30px 0 5px;
+
+    h2 {
+      font-size: 26px;
+    }
+
+    .row div[class*= 'col'] {
+      margin-bottom: 30px;
+    }
+  }
+
+  .section-start {
+    padding: 35px 0;
+  }
+}
+
+@include breakpoint($size_tablet) {
+  .top-content {
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .section-start {
+
+    .row {
+      padding: 0;
+    }
+    
+    .top-content {
+      h2 {
+        font-size: 26px;
+      }
+    }
+  }
+}

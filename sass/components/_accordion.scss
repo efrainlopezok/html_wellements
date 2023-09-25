@@ -1,0 +1,76 @@
+
+
+
+.accordion-block {
+
+  .collapse-heading {
+    font-family: 'Gilroy';
+    font-weight: bolder;
+    background-color: #fafafa;
+    border: 1px solid rgba(#979797, 0.5);
+    // box-shadow: 0 2px 4px rgba(#000, 0.5);
+    min-height: 100px;
+    padding: 34px 50px 10px;
+    padding-right: 35px;
+    position: relative;
+  }
+
+  .collapse-link {
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1.625rem;
+    line-height: 2rem;
+    font-weight: inherit;
+    margin-right: 50px;
+
+    &:after {
+      content: "\f067";
+      font-family: 'Font Awesome 5 Free';
+      position: absolute;
+      width: 46px;
+      height: 43px;
+      position: absolute;
+      right: 35px;  top: 33px;
+
+    }
+
+    &[aria-expanded="true"]:after {
+      content: "\f068";
+    }
+  }
+  
+  .collapse-panel {
+    height: 0;
+    overflow: hidden;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    padding: 0 46px 0;
+    padding-right: 54px;
+    transition: all 0.3s ease;
+
+    &.show {
+      border: 1px solid rgba(#979797, 0.26);
+      height: auto;
+      overflow: visible;
+      padding-top: 36px;
+      padding-bottom: 45px;
+    }
+  }
+
+  @media screen and (max-width: $size_tablet - 1) {
+    .collapse-heading {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .collapse-link:after {
+      right: 0;
+    }
+    .collapse-panel.show {
+      padding: 20px;
+    }
+  }
+
+}

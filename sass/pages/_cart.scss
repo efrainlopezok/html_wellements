@@ -1,0 +1,114 @@
+
+
+.cart-page {
+  min-height: calc(100vh - 293px);
+  padding: 30px 0 40px;
+
+  .cart-table-product {
+    .input-group-spinner.input-quantity button {
+      margin-top: 5px;
+    }
+  }
+
+  a:not([class]) {
+    color: #0089c9;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+
+  select {
+    background: #fff url(assets/img/dpdn-arrow.png) scroll 100% 50% no-repeat;
+    background-size: 12px auto;
+    background-position: calc(100% - 10px) center;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    display: block;
+    height: 44px;
+    width: 100%;
+    padding: 2px 18px;
+    outline: 0;
+    margin-bottom: 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 26px;
+  }
+
+  @include breakpoint($size_tablet-landscape) {
+    .sidebox-round {
+      background: #fff;
+      border: 0 none;
+      padding: 0;
+    }
+  }
+}
+
+.cart-startup {
+  @include breakpoint($size-mobile) {
+    p {
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .cart-buttons {
+      display: flex;
+      flex-direction: column;
+
+      .c-button {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+
+        &:first-child {
+          order: 2;
+        }
+        &:last-child {
+          order: 1;
+        }
+      }
+    }
+  }
+}
+
+.cart-product-info {
+  display: flex;
+
+  picture {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    position: relative;
+    height: 90px;
+    width: 90px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 2px;
+  }
+
+  .price-red {
+    color: #d0021b;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 18px;
+    padding-left: 10px;
+    text-decoration: line-through;
+  }
+}
+
+.cart-product-subscribe {
+  p {
+    color: #000;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 300;
+    margin-bottom: 8px;
+  }
+}

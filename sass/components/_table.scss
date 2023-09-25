@@ -1,0 +1,132 @@
+
+/* Custom tables */
+
+.cart-table {
+  background-color: transparent;
+  border-collapse: collapse;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+
+  td {
+    vertical-align: top;
+    font-weight: 300;
+  }
+
+  th {
+    font-weight: bolder;
+  }
+
+  tbody td,
+  tbody th {
+    height: 25px;
+  }
+
+  tbody th {
+    text-align: right;
+  }
+
+  hr {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  i {
+    font-style: italic;
+  }
+
+  small {
+    font-size: 12px;
+  }
+
+  .alert-text {
+    color: #d0021b;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.0025em;
+    line-height: 22px;
+  }
+
+  @include breakpoint($size_tablet) {
+    .alert-text {
+      color: #000;
+    }
+
+    small {
+      line-height: 1.2em;
+      display: block;
+      font-size: 14px;
+
+      br:first-child {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Cart table for products */
+
+.cart-table-product {
+  background-color: transparent;
+  border-collapse: collapse;
+  font-size: 16px;
+  line-height: 22px;
+
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+
+  td {
+    border-bottom: 1px solid #979797;
+    vertical-align: top;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 15px 2px 5px;
+    padding-right: 10px;
+
+    &.unborder {
+      border-bottom: 0 none;
+    }
+
+    &.subtotal {
+      .price-red {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 28px;
+      }
+    }
+  }
+
+  thead {
+    th {
+     color: #000000;
+     font-size: 14px;
+     font-weight: 300;
+     text-align: left;
+     border-bottom: 1px solid #979797;
+     padding: 5px 0;
+    }
+  }
+
+  input.checkbox+label {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  input.checkbox+label:before {
+    border-radius: 2px;
+  }
+  input.checkbox+label:after {
+    top: -5px;
+  }
+
+  .price-red {
+    color: #d0021b;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 18px;
+    padding-left: 10px;
+    text-decoration: line-through;
+  }
+}

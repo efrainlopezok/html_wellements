@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<head>
+<title>Wellements - Checkout  </title>
+<meta>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+<!-- SLICK CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+  <div id="page" class="site">
+    <header id="masthead" class="site-header" role="banner">
+      <nav id="nav" role="navigation">
+        <div class="brand-logo left-nav">
+          <img src="assets/svg/header_logo.svg" alt="wellements logo" />
+        </div>
+        <div class="main-nav">
+          <ul title="main navigation" role="group" aria-labelledby="main navigation">
+            <li tabindex="10"><a title="shop" href="#">SHOP</a></li>
+            <li tabindex="20"><a title="bundle" href="#">BUNDLE &amp; SAVE</a></li>
+            <li tabindex="30"><a title="store locator" href="#">STORE LOCATOR</a></li>
+            <li tabindex="50"><a title="education center" href="#">EDUCATION CENTER</a></li>
+            <li tabindex="40"><a title="about us" href="#">ABOUT US</a></li>
+            <li class="desktop-only" tabindex="60"><a title="login" href="#">LOGIN</a></li>
+            <li class="mobile-only" tabindex="70">
+              <hr />
+              <p>Already a customer?</p>
+              <a class="link-login" title="log in" href="#" tabIndex="75">Log in to your account.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-nav">
+          <a href="#" title="search">
+            <img src="assets/svg/search_icon.svg" alt="search icon" />
+          </a>
+          <a href="#" title="cart">
+            <img src="assets/svg/cart_icon.svg" alt="cart icon" />
+          </a>
+          <div class="mobile-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header><!-- #masthead -->
+
+    <div id="content" class="site-content">
+
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+
+          <div class="pages-main checkout-page">
+
+            <div class="row row-md">
+              <div class="col col-12">
+                <div class="page-heading">
+                  <h2 class="hidden-tablet">Checkout <small>Shipping Information</small></h2>
+                  <div class="progress-steps heading-toolbar">
+                    <div class="step current">
+                      <span>Shipping</span>
+                    </div>
+                    <div class="step">
+                      <span>Payment</span>
+                    </div>
+                  </div>
+                  <h4 class="show-tablet" align="center">Estimated Cart Total: $22.98</h4>
+                </div>
+                <h2 class="show-tablet">Checkout <br> <small>Shipping Information</small></h2>
+              </div>
+            </div>
+
+            <div class="row row-md">
+              <div class="col col-8 col-tablet-land-12">
+                <form action="" class="custom-form">
+                  <div class="col col-12 form-group">
+                    <label for="email">What is your email address?</label>
+                    <input type="email" id="email" class="form-input">
+                    <span class="help-text">This is where we will send all order information. You can create an account after checkout.</span>
+                  </div>
+
+                  <div class="row-fluid">
+                    <div class="col col-6 col-tablet-land-6 col-tablet-12 form-group">
+                        <label for="first_name">First name</label>
+                        <input type="text" id="first_name" class="form-input">
+                    </div>
+
+                    <div class="col col-6 col-tablet-land-6 col-tablet-12 form-group">
+                        <label for="last_name">Last name</label>
+                        <input type="text" id="last_name" class="form-input">
+                    </div>
+
+                    <div class="col col-8 col-tablet-land-12 form-group">
+                      <label for="street_address1">What is your street address?</label>
+                      <input type="text" id="street_address1" class="form-input">
+                      <input type="text" id="street_address2" class="form-input">
+                    </div>
+
+                    <div class="col col-8 col-tablet-land-12 form-group">
+                      <label for="city">What city do you live in?</label>
+                      <input type="text" id="city" class="form-input">
+                    </div>
+
+                    <div class="col col-6 col-tablet-land-12 form-group">
+                        <label for="state">What state do you live in?</label>
+                        <select id="" class="form-input">
+                          <option value="">Select a State</option>
+                        </select>
+                    </div>
+                    <div class="col col-6 col-tablet-land-12"></div>
+
+                    <div class="col col-5 col-tablet-land-12 form-group">
+                        <label for="zipcode">What's your zip code?</label>
+                        <input type="text" id="zipcode" class="form-input">
+                    </div>
+                    <div class="col col-7 col-tablet-land-12"></div>
+
+                    <div class="col col-6 col-tablet-land-12 form-group">
+                        <label for="country">What country do you live in?</label>
+                        <select id="country" class="form-input">
+                          <option value="">Select a State</option>
+                        </select>
+                    </div>
+                    <div class="col col-6 col-tablet-land-12"></div>
+
+                    <div class="col col-6 col-tablet-land-12 form-group">
+                        <label for="phone">What's your phone number?</label>
+                        <select id="phone" class="form-input">
+                          <option value="">Select a State</option>
+                        </select>
+                    </div>
+
+                  </div>
+                </form>
+
+              </div>
+
+              <div class="col col-4 hidden-desktop-md">
+                <div class="sidebox-round">
+                  <h2>Order Summary</h2>
+
+                  <a href="javascript:;" class="common-toggle common-collapse" aria-expanded="false" role="button" data-toggle="collapse" data-target="#cart_detail">1 Item in Cart <span class="caret"></span></a>
+                  <div class="collapse" id="cart_detail">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-12 form-btm text-center">
+                <a href="" class="c-button primary">Next: Payment Information</a>
+              </div>
+            </div>
+
+
+          </div>
+
+          <section id="newsletter-block" class="row newsletter-block-2 newsletter-block--default" style="background-image: url(assets/img/mountains-bg@2x.jpg);">
+            <div class="col-12 newsletter">
+              <div class="align-t-10 text-center">
+                <h2>Join Our Newsletter</h2>
+                <hr/>
+                <p>Get deals, articles and company news<br/>right to your inbox!</p>
+                <form action="#" class="newsletter-signup-form" title="Newsletter Signup">
+                  <input type="text" placeholder="Enter your email address" />
+                  <div class="button green submit" aria-label="join" role="button">
+                    <p>Join</p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </main><!-- #main -->
+      </div><!-- #primary -->
+
+      </div><!-- #content -->
+
+    <footer class="site-footer" role="contentinfo" data-root="<?php echo get_template_directory_uri(); ?>">
+      <div class="row padding-t-b">
+        <div id="footer-logo" class="col-3 col-tablet-12">
+          <img src="assets/svg/footer_logo.svg" alt="wellements logo" />
+        </div>
+        <div class="col-2 col-tablet-6 col-offset-1 links">
+          <ul>
+            <li><a title="shop" href="#"><p>Shop</p></a></li>
+            <li><a title="bundle and save" href="#"><p>Bundle & Save</p></a></li>
+            <li><a title="store locator" href="#"><p>Store Locator</p></a></li>
+          </ul>
+        </div>
+        <div class="col-2 col-tablet-6 links">
+          <ul>
+            <li><a title="about us" href="#"><p>About Us</p></a></li>
+            <li><a title="education center" href="#"><p>Education Center</p></a></li>
+            <li><a title="login" href="#"><p>Login</p></a></li>
+          </ul>
+        </div>
+        <div class="col-3 col-tablet-12 col-offset-1">
+            <ul class="social-icons flex-between">
+              <li><a title="Wellements Facebook" aria-label="Link to Wellements Facebook" href="#" target="_blank">
+                <img src="assets/svg/social/light/facebook_icon.svg" alt="Facebook Social" />
+              </a></li>
+              <li><a title="Wellements Instagram" aria-label="Link to Wellements Instagram" href="#" target="_blank">
+                <img src="assets/svg/social/light/instagram_icon.svg" alt="Instagram Social" />
+              </a></li>
+              <li><a title="Wellements Youtube" aria-label="Link to Wellements Youtube" href="#" target="_blank">
+                <img src="assets/svg/social/light/youtube_icon.svg" alt="Youtube Social" />
+              </a></li>
+              <li><a title="Wellements Twitter" aria-label="Link to Wellements Twitter" href="#" target="_blank">
+                <img src="assets/svg/social/light/twitter_icon.svg" alt="Twitter Social" />
+              </a></li>
+              <li><a title="Wellements Google Plus" aria-label="Link to Wellements Google Plus" href="#" target="_blank">
+                <img src="assets/svg/social/light/googleplus_icon.svg" alt="Google Plus Social" />
+              </a></li>
+              <li><a title="Wellements RSS Feed" aria-label="Link to Wellements RSS Feed" href="#" target="_blank">
+                <img src="assets/svg/social/light/rss_icon.svg" alt="RSS Feed" />
+              </a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="site-info row">
+        <div class="col-8 col-tablet-12">
+          <ul>
+            <li><a title="privacy policy" href="#"><p>Privacy Policy</p></a></li>
+            <li><a title="return policy" href="#"><p>Return Policy</p></a></li>
+            <li><a title="sipping policy" href="#"><p>Shipping Policy</p></a></li>
+            <li id="copyright"><p>&copy; 2018 Wellements</p></li>
+          </ul>
+        </div>
+        <div class="col-3 col-offset-1">
+        </div>
+      </div><!-- .site-info -->
+    </footer><!-- #colophon -->
+  </div><!-- #page -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

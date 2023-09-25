@@ -1,0 +1,10 @@
+#nav {
+    width:100%;
+    display:flex;
+    .brand-logo {
+        width:150px;
+    }
+    li {
+        color:$color_grey;
+    }
+}
